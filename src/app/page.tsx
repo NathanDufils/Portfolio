@@ -52,7 +52,7 @@ export default function Home() {
               </h1>
               {/* Le titre doit être explicite pour le recruteur [cite: 53] */}
               <h2 className="text-xl md:text-2xl text-gray-400 tracking-[0.2em] uppercase mb-8">
-                Développeur Full Stack Junior
+                Développeur Full Stack
               </h2>
 
               <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
@@ -60,8 +60,8 @@ export default function Home() {
                   VOIR MES RÉALISATIONS
                 </a>
                 {/* CV Téléchargeable obligatoire [cite: 216] */}
-                <a href="/CV_Nathan_Dufils.pdf" download target="_blank" rel="noopener noreferrer" className="px-8 py-3 border border-white/20 hover:border-white text-gray-300 hover:text-white font-bold rounded-lg transition flex items-center gap-2 justify-center">
-                  <Download size={20} /> MODIFIER CV
+                <a href="/CV_Nathan.pdf" download target="_blank" rel="noopener noreferrer" className="px-8 py-3 border border-white/20 hover:border-white text-gray-300 hover:text-white font-bold rounded-lg transition flex items-center gap-2 justify-center">
+                  <Download size={20} /> TÉLÉCHARGER CV
                 </a>
               </div>
             </div>

@@ -99,7 +99,7 @@ export const PROJECTS: Project[] = [
         challenge: "Intégration d'une carte interactive et gestion des notifications temps réel.",
         solution: "Plateforme fullstack avec tableau de bord administrateur et système de réservation unifié.",
         hasRepo: true,
-        repoUrl: "https://github.com/username/arvolution",
+        repoUrl: "https://github.com/ttherezien/Projet_ARvolution",
         image: "/Acceuil-ARvolution.png",
         details: [
             {
