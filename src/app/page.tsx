@@ -13,14 +13,12 @@ export default function Home() {
   return (
     <div className={`min-h-screen bg-[#050505] text-white selection:bg-purple-500 selection:text-white ${inter.className}`}>
       <Head>
-        {/* Optimisation SEO demandée par le cours [cite: 46] */}
         <title>Nathan Dufils | Développeur Web Fullstack & Logiciel</title>
         <meta name="description" content="Portfolio de Nathan Dufils. Projets React, Next.js, Vue.js. Recherche d'alternance pour Septembre 2025." />
         <meta name="keywords" content="Développeur, Portfolio, Alternance, React, NextJS, Java, Belfort" />
       </Head>
 
-      {/* --- NAVIGATION --- 
-          Critère cours: "Navigation fluide", liens clairs [cite: 266] */}
+      {/* --- NAVIGATION --- */}
       <nav className="fixed w-full bg-[#050505]/90 backdrop-blur-md border-b border-white/10 z-50 py-4 transition-all">
         <div className="container mx-auto px-6 flex justify-between items-center">
           <span className={`${russo.className} text-xl tracking-wider text-white select-none`}>
@@ -30,6 +28,7 @@ export default function Home() {
             <a href="#about" className="relative py-1 hover:text-purple-400 transition-colors focus:outline-none after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-purple-500 after:transition-all after:duration-300 hover:after:w-full">À PROPOS</a>
             <a href="#skills" className="relative py-1 hover:text-purple-400 transition-colors focus:outline-none after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-purple-500 after:transition-all after:duration-300 hover:after:w-full">SKILLS</a>
             <a href="#projects" className="relative py-1 hover:text-purple-400 transition-colors focus:outline-none after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-purple-500 after:transition-all after:duration-300 hover:after:w-full">PROJETS</a>
+            <a href="#articles" className="relative py-1 hover:text-purple-400 transition-colors focus:outline-none after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-purple-500 after:transition-all after:duration-300 hover:after:w-full">ARTICLES</a>
             <a href="#contact" className="px-5 py-2 border border-purple-500 text-purple-400 rounded-full hover:bg-purple-500 hover:text-white transition-all shadow-[0_0_10px_rgba(168,85,247,0.3)] hover:shadow-[0_0_20px_rgba(168,85,247,0.6)]">
               CONTACT
             </a>
@@ -50,7 +49,6 @@ export default function Home() {
                   DUFILS
                 </span>
               </h1>
-              {/* Le titre doit être explicite pour le recruteur [cite: 53] */}
               <h2 className="text-xl md:text-2xl text-gray-400 tracking-[0.2em] uppercase mb-8">
                 Développeur Full Stack
               </h2>
@@ -59,7 +57,6 @@ export default function Home() {
                 <a href="#projects" className="px-8 py-3 bg-purple-600 text-white font-bold rounded-lg hover:bg-purple-700 transition shadow-[0_0_15px_rgba(168,85,247,0.5)] transform hover:-translate-y-1">
                   VOIR MES RÉALISATIONS
                 </a>
-                {/* CV Téléchargeable obligatoire [cite: 216] */}
                 <a href="/CV_Nathan.pdf" download target="_blank" rel="noopener noreferrer" className="px-8 py-3 border border-white/20 hover:border-white text-gray-300 hover:text-white font-bold rounded-lg transition flex items-center gap-2 justify-center">
                   <Download size={20} /> TÉLÉCHARGER CV
                 </a>
@@ -69,8 +66,7 @@ export default function Home() {
         </div>
       </header>
 
-      {/* --- RUBRIQUE À PROPOS --- 
-          Critère cours: "Storytelling", expliquer le choix du domaine [cite: 39] */}
+      {/* --- RUBRIQUE À PROPOS --- */}
       <section id="about" className="px-6 -mt-10 mb-20 relative z-10 scroll-mt-20">
         <div className="container mx-auto max-w-5xl">
           <div className="bg-[#0a0a0a] border border-purple-500/50 rounded-[2rem] p-8 md:p-12 shadow-[0_0_30px_rgba(168,85,247,0.15)]">
@@ -85,7 +81,6 @@ export default function Home() {
                 </p>
               </div>
 
-              {/* Soft Skills [cite: 184] */}
               <div className="flex flex-col gap-4 border-l border-white/10 md:pl-8 min-w-[250px]">
                 <h4 className="text-purple-400 font-bold uppercase text-sm tracking-widest">Soft Skills</h4>
                 <ul className="space-y-3">
@@ -108,7 +103,6 @@ export default function Home() {
             <h3 className={`${russo.className} text-3xl mb-10 text-purple-100 uppercase`}>Hard Skills</h3>
             <p className="text-gray-400 text-sm mb-6 italic">Les technologies que je pratique au quotidien.</p>
             <div className="space-y-6">
-              {/* Ordre logique demandé par le cours [cite: 61] */}
               <SkillBar name="React / Next.js" level="w-4/5" />
               <SkillBar name="Vue.js / Node.js" level="w-3/4" />
               <SkillBar name="Java / Python" level="w-4/5" />
@@ -159,7 +153,7 @@ export default function Home() {
       </section>
 
       {/* --- VEILLE INFORMATIQUE --- */}
-      <section className="px-6 mb-20 relative z-10">
+      <section id="articles" className="px-6 mb-20 relative z-10 scroll-mt-32">
         <div className="container mx-auto max-w-5xl">
           <div className="flex items-center gap-4 mb-8">
             <div className="h-px bg-white/10 flex-1"></div>
@@ -195,7 +189,6 @@ export default function Home() {
             <input type="email" aria-label="Email" placeholder="Email" className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:border-purple-500 outline-none transition" required />
             <textarea rows={4} aria-label="Message" placeholder="Votre message..." className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:border-purple-500 outline-none transition" required></textarea>
 
-            {/* Mention RGPD Obligatoire  */}
             <div className="flex items-start gap-3 mt-4">
               <input type="checkbox" id="rgpd" className="mt-1 accent-purple-500" required />
               <label htmlFor="rgpd" className="text-xs text-gray-500 leading-tight">

@@ -72,9 +72,7 @@ export default function BlogCarousel() {
         const container = containerRef.current;
         if (container) {
             container.addEventListener('scroll', checkScroll);
-            // Check initial state
             checkScroll();
-            // Check on resize
             window.addEventListener('resize', checkScroll);
         }
         return () => {
@@ -99,7 +97,6 @@ export default function BlogCarousel() {
 
     return (
         <div className="relative group/carousel">
-            {/* Bouton Gauche */}
             {canScrollLeft && (
                 <button
                     onClick={scrollLeft}
@@ -110,7 +107,6 @@ export default function BlogCarousel() {
                 </button>
             )}
 
-            {/* Bouton Droit */}
             {canScrollRight && (
                 <button
                     onClick={scrollRight}

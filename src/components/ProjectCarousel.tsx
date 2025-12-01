@@ -47,7 +47,6 @@ export default function ProjectCarousel() {
 
     return (
         <div className="relative group/carousel">
-            {/* Bouton Gauche */}
             {canScrollLeft && (
                 <button
                     onClick={scrollLeft}
@@ -58,7 +57,6 @@ export default function ProjectCarousel() {
                 </button>
             )}
 
-            {/* Bouton Droit */}
             {canScrollRight && (
                 <button
                     onClick={scrollRight}

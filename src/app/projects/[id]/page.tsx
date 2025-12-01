@@ -29,7 +29,6 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
                 </Link>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                    {/* Image Section */}
                     <div className="space-y-6">
                         <div className="relative aspect-video rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-purple-900/20">
                             <img
@@ -52,7 +51,6 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
                         </div>
                     </div>
 
-                    {/* Content Section */}
                     <div className="space-y-8">
                         <div>
                             <span className="text-purple-400 font-mono text-sm tracking-wider uppercase">{project.type}</span>
