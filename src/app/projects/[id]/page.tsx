@@ -116,10 +116,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
                                 </button>
                             )}
 
-                            <button className="flex-1 flex items-center justify-center gap-2 py-3 bg-purple-600 text-white font-semibold rounded-xl hover:bg-purple-700 transition shadow-lg shadow-purple-900/30">
-                                <ExternalLink size={20} />
-                                Voir le projet
-                            </button>
+
                         </div>
                     </div>
                 </div>

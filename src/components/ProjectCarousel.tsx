@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState, useEffect } from 'react';
-import { ExternalLink, Github, Code, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Github, Code } from 'lucide-react';
 import Link from 'next/link';
 import { PROJECTS, Project } from '@/data/projects';
 
