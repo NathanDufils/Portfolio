@@ -5,6 +5,7 @@ import { Mail, Phone, Code, Database, Terminal, Download, Gamepad2, Plane, Monit
 // Chargement des polices
 import BlogCarousel from '@/components/BlogCarousel';
 import ProjectCarousel from '@/components/ProjectCarousel';
+import ContactForm from '@/components/ContactForm';
 
 const russo = Russo_One({ weight: '400', subsets: ['latin'] });
 const inter = Inter({ subsets: ['latin'] });
@@ -169,39 +170,7 @@ export default function Home() {
 
       {/* --- CONTACT (Avec RGPD) --- */}
       <section id="contact" className="py-20 px-6 bg-gradient-to-t from-purple-900/20 to-black scroll-mt-32">
-        <div className="container mx-auto max-w-xl bg-[#0a0a0a] border border-white/5 p-8 rounded-2xl">
-          <h2 className={`${russo.className} text-3xl font-bold mb-8 text-center text-white`}>CONTACT</h2>
-
-          <div className="flex flex-col gap-4 mb-8 items-center">
-            <a href="mailto:dufilsnathan@gmail.com" className="flex items-center gap-3 text-gray-300 hover:text-purple-400 transition">
-              <Mail size={20} /> dufilsnathan@gmail.com
-            </a>
-            <span className="flex items-center gap-3 text-gray-300">
-              <Phone size={20} /> 07 68 47 35 51
-            </span>
-          </div>
-
-          <form className="space-y-4">
-            <div className="grid grid-cols-2 gap-4">
-              <input type="text" aria-label="Nom" placeholder="Nom" className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:border-purple-500 outline-none transition" required />
-              <input type="text" aria-label="Prénom" placeholder="Prénom" className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:border-purple-500 outline-none transition" required />
-            </div>
-            <input type="email" aria-label="Email" placeholder="Email" className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:border-purple-500 outline-none transition" required />
-            <textarea rows={4} aria-label="Message" placeholder="Votre message..." className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:border-purple-500 outline-none transition" required></textarea>
-
-            <div className="flex items-start gap-3 mt-4">
-              <input type="checkbox" id="rgpd" className="mt-1 accent-purple-500" required />
-              <label htmlFor="rgpd" className="text-xs text-gray-500 leading-tight">
-                En soumettant ce formulaire, j'accepte que mes données personnelles soient utilisées pour me recontacter.
-                Aucun autre traitement ne sera effectué.
-              </label>
-            </div>
-
-            <button type="submit" className="w-full py-3 bg-purple-600 text-white font-bold rounded-lg hover:bg-purple-700 transition shadow-[0_0_15px_rgba(168,85,247,0.4)] mt-4">
-              ENVOYER
-            </button>
-          </form>
-        </div>
+        <ContactForm />
       </section>
 
       {/* --- FOOTER --- */}
