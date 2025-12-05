@@ -49,6 +49,11 @@ export const PROJECTS: Project[] = [
                 type: 'text',
                 title: "Bilan Technique",
                 content: "Ce projet a nécessité une maîtrise approfondie du cycle de vie des composants React et des capacités de rendu serveur de Next.js. Au-delà de la simple stack technique (Prisma, MySQL, SCSS), c'est la capacité à abstraire la complexité technique pour l'utilisateur final qui a fait le succès de cet outil, réduisant le temps de production de 40%."
+            },
+            {
+                type: 'text',
+                title: "Confidentialité",
+                content: "Le code source de ce projet est privé car la solution est déployée uniquement sur l'intranet de l'entreprise et contient des informations confidentielles."
             }
         ]
     },
@@ -98,8 +103,7 @@ export const PROJECTS: Project[] = [
         context: "Gestion complète d'un salon de réalité virtuelle (réservations, équipements, conférences).",
         challenge: "Intégration d'une carte interactive et gestion des notifications temps réel.",
         solution: "Plateforme fullstack avec tableau de bord administrateur et système de réservation unifié.",
-        hasRepo: true,
-        repoUrl: "https://github.com/ttherezien/Projet_ARvolution",
+        hasRepo: false,
         image: "/Acceuil-ARvolution.png",
         details: [
             {
@@ -121,6 +125,11 @@ export const PROJECTS: Project[] = [
                 type: 'text',
                 title: "Bilan",
                 content: "Ce projet a été une expérience formatrice tant sur le plan technique (approfondissement Node.js/Postgres) que sur la gestion de projet en équipe. Il m'a permis de comprendre l'importance d'une API bien documentée et les défis de l'intégration de services tiers dans une application monolithique."
+            },
+            {
+                type: 'text',
+                title: "Code Source Privé",
+                content: "Le repository GitHub de ce projet a été mis en privé et n'est plus accessible au public."
             }
         ]
     }
